@@ -1,22 +1,20 @@
 \section{Types of Attacks}
 
-Password attacks can be separated in online and offline attacks.
-
 \subsection{Online Attacks}
 
 Online password attacks are held against logins of network protocols like POP3, SSH or FTP. The target that's being attacked is a remote computer or server on a different network \cite{pentesting}. The rate at which an attack like this can be processed, depends mostly on the protocol, the connection to the server and the hardware of the server itself. Therefore the attacker has only a very limited influence on the attack rate.
 
 Another challenge with online attacks is the fact that not only a password, but also the associated username is needed. If both of these inputs are unknown the number of possible entries is the result of all possible passwords multiplied by all possible usernames.
 
-A tool that can be used for such an attack is hydra. hydra is a command line tool available for Windows and different unix based operating systems. It's free, open source and still under active development. The command for running hydra will look similar to this:
+A tool that can be used for such an attack is hydra \cite{hydra}. hydra is a command line tool available for Windows and different unix based operating systems. It's free, open source and still under active development. The command for running hydra will look similar to this:
 
 \begin{center}
-\textbf{hydra -l admin -P passwords.txt mail.domain.com pop3}
+\textbf{``hydra -l admin -P passwords.txt mail.domain.com pop3''}
 \end{center}
 
 The lowercase l specifies that the username "admin" is already known. The uppercase P stands for a list of passwords that are to be used for the attack. In the end the address of the server as well as the protocol type is entered. -h will give a full list of hydras syntax.
 
-A common countermeasure against online attacks is a maximum number of logins. Since the verification process is done by the server, it would be possible to block specific IPs after a certain number of unsuccessful tries. A human user is probably not affected by a limit of only one login per second or 100 tries a day. An attacker on the other hand will have a much harder time on such a server \cite{anders}. Although protocols like SSH can be enhanced for a maximum number of logins, it's not enabled by default \cite{sshmanpages}.
+A common countermeasure against online attacks is a maximum number of logins. Since the verification process is done by the server, it would be possible to block specific IPs after a certain number of unsuccessful tries. A human user is probably not affected by a limit of only one login per second or 100 tries a day. An attacker on the other hand will have a much harder time executing password or DDoS attacks on such a server. Although protocols like SSH can be enhanced for a maximum number of logins, it is not enabled by default \cite{sshmanpages}.
 
 \newpage
 
@@ -29,7 +27,7 @@ The rate at which an offline attack can be run, depends mostly on the hashtype a
 A tool that can be used for such an attack is hashcat. Just like hydra it's open source and available for different platforms. It's still under active development and a command for running hashcat can look like this:
 
 \begin{center}
-\textbf{hashcat -a 0 -m 0 hashes.txt rockyou.txt}
+\textbf{``hashcat -a 0 -m 0 hashes.txt rockyou.txt''}
 \end{center}
 
 -a 0 specifies that the attack type is wordlist and -m 0 tells hashcat that the hashes are MD5 entries. hashcat will then calculate the hashes for the passwords in the rockyou.txt file and cross reference them against the entries in hashes.txt. The full list of hashcats syntax can be viewed with the -h command.
