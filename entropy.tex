@@ -43,10 +43,10 @@ Because of its exponential growth increasing the length of a password will have 
 Passwords that are made up of actual words are called passphrases. Calculating the entropy of ``correcthorsebatterystaple'' using the entropy equation based on single characters results in 118. However instead of analysing this passphrase based on characters, one could also do it based on the four words it consists of. ``correct'', ``horse'', ``battery'' and ``staple'' are all in the top 2000 of the most common english words \cite{commonwords}. Instead of seeing a tuple made of 25 lowercase characters, it is also possible to see a tuple with the length of 4 and a pool size of 2000. The same entropy equation is used, but since this is based on a different model the entropy changes, in this case to 44.
 
 \begin{equation}
-H_characters = log_2(26^25) = 118
+H_{characters} = log_2(26^25) = 118
 \end{equation}
 \begin{equation}
-H_words = log_2(2000^4) = 44
+H_{words} = log_2(2000^4) = 44
 \end{equation}
 
 Since we are predicting the strength of a password from the perspective of an attacker, the entropy shouldn't be higher than the worst possible approach we can find to calculate it.
