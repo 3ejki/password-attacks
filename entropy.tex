@@ -1,0 +1,51 @@
+\section{Entropy}
+
+The strength of a password can be described by the number of guesses attackers need to crack it. The more tries an hacker needs to find the password, the more secure it is \cite{passwordquality}. Length, character complexity and unpredictability of the password play into account how large this number will be \cite{passwordstrength}. This results in two problems when trying to measure the security of a password.
+
+For one this number is highly subjective as every attacker would need a different number of guesses. It's difficult to judge how many tries the average hacker might need. Also, this number can only be stated after an attack was successful. Instead the entropy can be used to objectively predict this event and measure the strength.
+
+\begin{equation}
+H = log_2(N^L)
+\end{equation}
+
+The mathematical entropy H of a password can be determined based on its length L and the pool size N each character can be chosen from. Increasing the possible complexity of each character or increasing the length will also increase the entropy of a password \cite{webernetz}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l l}
+    Length of Password (L)  & Entropy \\
+    \hline
+    6                       & 28 \\
+    8                       & 38 \\
+	10                      & 47 \\
+    12                      & 56 \\
+    14						& 66
+\end{tabular}
+\caption{Entropy based on password length. N = 26}
+\end{table}
+
+Because of its exponential growth increasing the length of a password will have a larger effect on the entropy than a more complex pool size \cite{webernetz}. Therefore users who are interested in strengthening their passwords should consider making it longer rather than using additional symbol groups like special characters. Increasing both will still get the best results.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l l}
+    Character Complexity (N) & Entropy \\
+    \hline
+    10                       & 27 \\
+    26                       & 38 \\
+    36                       & 41 \\
+    52                       & 46 \\
+    95                       & 53
+\end{tabular}
+\caption{Entropy based on a character complexity. L = 8}
+\end{table}
+
+Passwords that are made up of actual words are called passphrases. Calculating the entropy of "correcthorsebatterystaple" using the entropy equation results in 118. However instead of analysing this passphrase based on characters, one could also do it based on the four words it consists of. "correct", "horse", "battery" and "staple" are all in the top 2000 of the most common english words \cite{commonwords}. Instead of seeing a tuple made of 25 lowercase characters, it's also possible to see a tuple with the length of 4 and a pool size of 2000. Calculating the entropy this way results in 44. 
+
+Since we're predicting the strength of a password from the perspective of an attacker, the entropy shouldn't be higher than the worst possible approach we can find to calculate it.
+
+The entropy reflects the strength of a password based on its length and element complexity, but it leaves out its unpredictability. "123456" has an entropy of 20, but because it's on of the most common passwords in the world the realistic password entropy should be lower \cite{passwordquality}. Predictable information will influence the mathematical entropy we can calculate, resulting in a lower realistic password entropy.
+
+One approach to this gap between mathematical entropy and the realistic strength of a password is used by a software called zxcvbn \cite{zxcvbn}. It tries to account for patterns and predictable information users might include in their passwords. For example "password" has an entropy of 38 calculated on a character basis and an entropy of 9 when analysed as a word. It's the 587th most common word in the english language \cite{commonwords}. However zxcvbn rates its entropy as 0, because its known as the most common password in the world.
+
+\newpage

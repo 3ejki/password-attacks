@@ -1,0 +1,83 @@
+\section{Patterns}
+
+Identifying password patterns helps hackers to make their attacks more effective. The two most common ones are topologies and keyboard patterns. Other popular patterns are dates, repeats, sequences and l33t speak \cite{zxcvbn}.
+
+\subsection{Topologies}
+
+The topology of a password describes the overall structure of character types that are being used at specific positions. If a pure brute-force attack seems unlikely to be successful, the attacker might only test for passwords that follow a specific set of rules. Characters are most often grouped in one of four categories.
+
+\begin{itemize}
+\item u: uppercase letter (26)
+\item l: lowercase letter (26)
+\item d: numeric digits (10)
+\item s: special character (33)
+\end{itemize}
+
+The password "Secret01!" uses all four of these categories resulting in an entropy of 59. Its topology is "ullllldds" describing the overall structure of its character set. If this topology is known or assumed by an attacker the entropy drops to 40 resulting in roughly 500,000 times less possible passwords.
+
+Since this is the result of just 1 common password pattern, let's have a look at a distribution amongst real user data.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l l}
+	Topology	& Frequency \\
+	\hline
+	llllllll	& 9\% \\
+	llllll		& 8\% \\
+	dddddd		& 6\% \\
+	lllllll		& 6\% \\
+	dddddddd	& 4\% \\
+	lllllldd	& 3\%
+\end{tabular}
+\caption{Frequency of the top password topologies in the top 1 million worst passwords}
+\cite{seclist}
+\end{table}
+
+The top 11 topologies make up 50\% of all passwords. Since this is a collection of the 1 million worst passwords, here's a different dataset containing 14.3 million passwords.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l l}
+	Topology	& Frequency \\
+	\hline
+	llllllll	& 4\% \\
+	llllll		& 4\% \\
+	lllllll		& 4\% \\
+	lllllllll	& 3\% \\
+	ddddddd		& 3\% \\
+	dddddddddd	& 3\%
+\end{tabular}
+\caption{Frequency of the top password topologies in the RockYou password list}
+\cite{rockyou}
+\end{table}
+
+The frequency of the top three most common topologies has dropped by 50\%, but the overall order appears to be similar. In fact, 16 out of the top 20 patterns of each are completely the same. 18 out of 20 can be found by using only lowercase letters and numbers. The top 22 topologies make up 50\% of all passwords.
+
+One approach to increasing security is telling users to include lowercase letters, uppercase letters and numbers in their passwords. Another dataset gives an insight of this theory.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l l}
+	Topology	& Frequency \\
+	\hline
+	ullllldd	& 13\% \\
+	ulllllldd	& 13\% \\
+	ullldddd	& 11\% \\
+	ullllllldd	& 7\% \\
+	ulllldddd	& 5\%
+\end{tabular}
+\caption{Frequency of the most common password topologies in anonymous corporate data by KoreLogic}
+\cite{korelogic}
+\end{table}
+
+These top 5 topologies result in 50\% of all user passwords. While the average entropy of each password increased, users got less creative with their choice of topologies. The patterns that describe the top 50\% have a combined entropy of 45 in comparison to an entropy of 57 it would take to crack half of the RockYou passwords.
+
+\newpage
+
+\subsection{Keyboard Patterns}
+
+Keyboard patterns describe easily repeatable "walks" from one key to the next on a keyboard. The 29th most common password "1qaz2wsx" \cite{seclist} seems much too random to be even in the Top 100. But when it's typed using a standard QWERTY-Keyboard the pattern becomes obvious.
+
+Keyboard patterns are frequently used throughout the most common passwords. However, in reality they don't pose a big thread \cite{unmasked}. Tools like zxcvbn, which itself was named after a keyboard pattern, can easily recognise these weak passwords and stop people from using them.
+
+\newpage

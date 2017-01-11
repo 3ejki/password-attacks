@@ -1,0 +1,40 @@
+\section{Brute-Force}
+
+Systematically enumerating over all possible inputs and testing each as a solution is called a brute-force search. Cracking a password by guessing inputs is tedious work for a human being. If one could do it at a rate of 1 password per second, it would still take 10 days for trying all possible combinations of just 3 characters. Any computer available today can do the same in under a second.
+
+A security company called Sagitta is currently selling a computer for \$22.499 that ships with 8 NVidia GTX 1080 included. This machine is called Brutalis and is benchmarked to run at 200 billion MD5 Hashes per second \cite{brutalis}. The time it takes such a machine to attack different lengths of passwords can be summarised as follows.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l l l}
+	Length of Password	& Entropy 	& Runtime \\
+	\hline
+	6                   & 39 		& 4 seconds \\
+	7                   & 46 		& 6 minutes \\
+	8                   & 53 		& 9 hours \\
+	9                   & 59 		& 36 days \\
+	10                  & 66		& 9 years
+\end{tabular}
+\caption{Sagitta Brutalis (NVidia GTX 1080) cracking all character combination on MD5 hashes with hashcat v3.00}
+\end{table}
+
+A strong 8 character password consisting of any of the 95 printable ASCII characters will be cracked within 9 hours of using such a machine. Using more complex Hashtypes than MD5 changes these numbers drastically.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l l}
+	Hashtype				& Runtime \\
+	\hline
+	MD5           			& 9 hours \\
+	SHA1           			& 30 hours \\
+	SHA256           		& 4 days \\
+	1Password           	& 9 years \\
+	Keypass          		& 1.000 years \\
+	VeraCrypt (HMAC-SHA512)	& 40.000 years
+\end{tabular}
+\caption{Sagitta Brutalis (NVidia GTX1080) calculating all 8 character combinations with hashcat v3.00}
+\end{table}
+
+A password protecting a VeraCrypt (HMAC-SHA512) Container can have 25 bits lower entropy than a password hashed with MD5 to offer a comparable level of security, because the hashing algorithm is that much slower.
+
+\newpage

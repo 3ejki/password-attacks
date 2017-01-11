@@ -1,0 +1,137 @@
+%\input{config.tex}
+
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[singlespacing]{setspace}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+
+\widowpenalty = 10000
+\clubpenalty = 10000
+\interfootnotelinepenalty = 10000
+
+\pagenumbering{Roman}
+
+\title{Password Attacks}
+\author{Paul-Louis Pröve}
+\date{\today, Hamburg}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+%\listoffigures
+%\newpage
+
+\pagenumbering{arabic}
+
+\input{intro.tex}
+\input{types.tex}
+\input{entropy.tex}
+\input{bruteforce.tex}
+\input{patterns.tex}
+\input{lists.tex}
+\input{personal.tex}
+\input{summary.tex}
+
+\begin{thebibliography}{99}
+
+\bibitem{pentesting}
+Georgia Weidman.
+\textit{Penetration Testing: A Hands-On Introduction to Hacking}.
+No Starch Press, 1st Edition, 2014
+
+\bibitem{sshmanpages}
+Manpagez - SSH daemon configuration file
+\\\texttt{http://www.manpagez.com/man/5/sshd\_config/}
+
+\bibitem{hashes}
+M. Naor.
+\textit{Universal one-way hash functions and their cryptographic applications}.
+ACM New York, NY, USA 1989
+
+\bibitem{gpu}
+Martijn Sprengers.
+\textit{Speeding up GPU-based password cracking}.
+\\\texttt{http://2012.sharcs.org/slides/sprengers.pdf}
+
+\bibitem{anders}
+Michael Anders.
+\textit{Some words on Password use, salting and stretching }.
+\\\texttt{https://www.fh-wedel.de/\~an/crypto/accessories/ password\_handling01.html}
+
+\bibitem{passwordquality}
+Wanli Ma, John Campbell, Dat Tran, Dale Kleeman.
+\textit{Password Entropy and Password Quality}.
+2010 Fourth International Conference on Network and System Security
+
+\bibitem{passwordstrength}
+Cyber Security Tip ST04-002.
+\textit{Choosing and Protecting Passwords}.
+US CERT. Retrieved June 20, 2009
+
+\bibitem{webernetz}
+Johannes Weber.
+\textit{Password Strength/Entropy: Characters vs. Words}.
+\\\texttt{https://blog.webernetz.net/2013/07/30/ password-strengthentropy-characters-vs-words/}
+
+\bibitem{brutalis}
+Sagitta Brutalis.
+\textit{8x NVidia GTX 1080 Hashcat Benchmarks}.
+\\\texttt{https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a270c40}
+
+\bibitem{seclist}
+Daniel Miessler.
+\textit{SecList: 10 Million Password List - Top 1 Million}.
+\\\texttt{https://github.com/danielmiessler/SecLists/blob/master/ Passwords/10\_million\_password\_list\_top\_1000000.txt}
+
+\bibitem{rockyou}
+Daniel Miessler.
+\textit{SecList: RockYou List}.
+\\\texttt{https://github.com/danielmiessler/SecLists/blob/master/
+Passwords/rockyou.txt.tar.gz}
+
+\bibitem{korelogic}
+Hank Leininger, KoreLogic.
+\textit{Password Topology Histogram Wear-Leveling}.
+\\\texttt{https://www.korelogic.com/Resources/Presentations/
+bsidesavl\_pathwell\_2014-06.pdf}
+
+\bibitem{zxcvbn}
+Dan Wheeler, Dropbox.
+\textit{Zxcvbn - A realistic password strength estimator}.
+\\\texttt{https://github.com/dropbox/zxcvbn}
+
+\bibitem{commonwords}
+Josh Kaufman.
+\textit{Google 10000 most common english words}.
+\\\texttt{https://github.com/first20hours/google-10000-english}
+
+\bibitem{unmasked}
+wpengine.
+\textit{Unmasked: What 10 million passwords reveal about the people who choose them}.
+\\\texttt{http://wpengine.com/unmasked/}
+
+\bibitem{cupp}
+Mebus.
+\textit{CUPP: Common User Passwords Profiler}.
+\\\texttt{https://github.com/Mebus/cupp}
+
+\bibitem{dictionary}
+Oxford Dictionaries
+\textit{How many words are there in the English language?}
+\\\texttt{https://en.oxforddictionaries.com/explore/
+how-many-words-are-there-in-the-english-language}
+
+
+\end{thebibliography}
+
+\end{document}

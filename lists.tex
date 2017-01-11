@@ -1,0 +1,19 @@
+\section{Password Lists}
+
+Lists of passwords are mainly used for two different purposes. They can be analysed for length, patterns or other criteria, like we have done in the previous chapter. The second purpose is inputting them into cracking tools to run a brute-force attack exclusively on the included words. This is called a dictionary attack.
+
+Password lists can consist of leaked passwords, common names, actual dictionaries or a mixture of the three. Popular lists among hackers are:
+
+\begin{itemize}
+\item RockYou-List 
+\item 10 Million Passwords by Mark Burnett
+\item Leaked user passwords
+\item English dictionary
+\item Facebook first names
+\end{itemize}
+
+Most of them don't exceed 100 million passwords and can often be tested within a few seconds. That's why many attackers combine these entries to chains of passwords also called passphrases.
+
+The entire english dictionary includes roughly 170,000 different words \cite{dictionary}. If we base a brute-force attack on this dictionary, every combination of two random words has an entropy of 35. Increasing the chain to three words results in 52 and four words represent an entropy of 70. Many times however users choose passphrases based on commonly used words. A six word passphrase built around the 100 most common words has an entropy of 40. 
+
+\newpage
