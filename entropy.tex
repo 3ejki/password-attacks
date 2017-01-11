@@ -40,19 +40,19 @@ Because of its exponential growth increasing the length of a password will have 
 \caption{Entropy based on a character complexity. L = 8}
 \end{table}
 
-Passwords that are made up of actual words are called passphrases. Calculating the entropy of ``correcthorsebatterystaple'' using the entropy equation based on single characters results in 118. However instead of analysing this passphrase based on characters, one could also do it based on the four words it consists of. ``correct'', ``horse'', ``battery'' and ``staple'' are all in the top 2000 of the most common english words \cite{commonwords}. Instead of seeing a tuple made of 25 lowercase characters, it is also possible to see a tuple with the length of 4 and a pool size of 2000. The same entropy equation is used, but since this is based on a different model the entropy changes, in this case to 44.
+Passwords that are made up of actual words are called passphrases. Calculating the entropy of ``correcthorsebatterystaple'' using the entropy equation based on single characters results in 118. However instead of analysing this passphrase based on characters, one could also do it based on the four words it consists of. ``correct'', ``horse'', ``battery'' and ``staple'' are all in the top 2000 of the most common english words \cite{commonwords}. Instead of seeing a tuple made of 25 lowercase characters, it is also possible to see a tuple with the length of 4 and a pool size of 2000. The same entropy equation is used, but since this is based on a different model the entropy changes --- in this case to 44.
 
 \begin{equation}
-H_{characters} = log_2(26^25) = 118
+H_{characters} = log_2(26^{25}) = 118
 \end{equation}
 \begin{equation}
 H_{words} = log_2(2000^4) = 44
 \end{equation}
 
-Since we are predicting the strength of a password from the perspective of an attacker, the entropy shouldn't be higher than the worst possible approach we can find to calculate it.
+Since we are predicting the strength of a password from the perspective of an attacker, the entropy should not be higher than the worst possible approach we can find to calculate it.
 
-The entropy reflects the strength of a password based on its length and element complexity, but it leaves out its unpredictability. "123456" has an entropy of 20, but because it's on of the most common passwords in the world the realistic password entropy should be lower \cite{passwordquality}. Predictable information will influence the mathematical entropy we can calculate, resulting in a lower realistic password entropy.
+The entropy reflects the strength of a password based on its length and element complexity, but it leaves out its unpredictability. ``123456'' has an entropy of 20, but because it is one of the most common passwords in the world the realistic strength should be lower than our calculation suggests \cite{passwordquality}. Predictable information will decrease the strength of a password.
 
-One approach to this gap between mathematical entropy and the realistic strength of a password is used by a software called zxcvbn \cite{zxcvbn}. It tries to account for patterns and predictable information users might include in their passwords. For example "password" has an entropy of 38 calculated on a character basis and an entropy of 9 when analysed as a word. It's the 587th most common word in the english language \cite{commonwords}. However zxcvbn rates its entropy as 0, because its known as the most common password in the world.
+One approach to this gap between entropy and the realistic strength of a password is used by a software called zxcvbn \cite{zxcvbn}. It tries to account for patterns and predictable information users might include in their passwords. For example "password" has an entropy of 38 calculated on a character basis and an entropy of 9 when analysed as a word. It's the 587th most common word in the english language \cite{commonwords}. However zxcvbn rates its entropy as 0, because its known as the most common password in the world.
 
 \newpage

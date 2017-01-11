@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.10)  11 JAN 2017 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.10)  11 JAN 2017 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -526,4 +526,151 @@ Package microtype Info: Tracking enabled.
 Package microtype Info: Using default tracking set `smallcaps'.
 Package microtype Info: Adjustment of interword spacing enabled.
 Package microtype Info: Using default spacing set `basictext'.
-Package microtype Info: Adjustment of character kerning ena
+Package microtype Info: Adjustment of character kerning enabled.
+Package microtype Info: Using default kerning set `alltext'.
+ (/usr/local/texlive/2016basic/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+
+Package microtype Warning: \nonfrenchspacing is active. Adjustment of
+(microtype)                interword spacing will disable it. You might want
+(microtype)                to add `\microtypecontext{spacing=nonfrench}'
+(microtype)                to your preamble.
+
+<fhw.png, id=1, 179.9523pt x 96.36pt>
+File: fhw.png Graphic file (type png)
+ <use fhw.png>
+Package pdftex.def Info: fhw.png used on input line 26.
+(pdftex.def)             Requested size: 143.9978pt x 77.11307pt.
+ [1
+
+{/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./
+fhw.png>] (./Thesis.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 3.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `Thesis.toc'.
+
+ [1]
+(./intro.tex [1]) (./types.tex [2] [3]) (./entropy.tex [4] [5])
+(./bruteforce.tex [6]) (./patterns.tex
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 10.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 10.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7] [8] [9]) (./lists.tex [10]) (./personal.tex [11]) (./summary.tex [12])
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 66.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+\T1/lmtt/m/n/10.95 https://www.fh-wedel.de/ãn/crypto/accessories/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
+\T1/lmtt/m/n/10.95 https://blog.webernetz.net/2013/07/30/
+ []
+
+
+Overfull \hbox (30.42722pt too wide) in paragraph at lines 103--106
+\T1/lmtt/m/n/10.95 https://gist.github.com/epixoip/a83d38f412b4737e99bbef804a27
+0c40 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
+\T1/lmtt/m/n/10.95 https://github.com/danielmiessler/SecLists/blob/master/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--117
+\T1/lmtt/m/n/10.95 https://github.com/danielmiessler/SecLists/blob/master/
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 119--123
+[]\T1/lmr/m/n/10.95 (+10) Hank Leininger, Ko-re-L-ogic. \T1/lmr/m/it/10.95 (+10
+) Pass-word Topol-ogy His-togram Wear-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--123
+\T1/lmtt/m/n/10.95 https://www.korelogic.com/Resources/Presentations/
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 145--149
+\T1/lmtt/m/n/10.95 https://en.oxforddictionaries.com/explore/
+ []
+
+[14] (./Thesis.aux) ) 
+Here is how much of TeX's memory you used:
+ 3920 strings out of 494447
+ 63145 string characters out of 6166765
+ 149125 words of memory out of 5000000
+ 7097 multiletter control sequences out of 15000+600000
+ 59497 words of font info for 70 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 38i,7n,38p,759b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016basic/texmf-dist/fonts/enc/dvips/l
+m/lm-ec.enc}{/usr/local/texlive/2016basic/texmf-dist/fonts/enc/dvips/lm/lm-math
+sy.enc}{/usr/local/texlive/2016basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.en
+c}{/usr/local/texlive/2016basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/l
+ocal/texlive/2016basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/
+texlive/2016basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texli
+ve/2016basic/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2
+016basic/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2016ba
+sic/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2016basic/te
+xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2016basic/texmf-di
+st/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2016basic/texmf-dist/font
+s/type1/public/lm/lmri10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/typ
+e1/public/lm/lmri12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/pu
+blic/lm/lmsy10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/
+lm/lmtt10.pfb>
+Output written on Thesis.pdf (16 pages, 254386 bytes).
+PDF statistics:
+ 108 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 17414 words of extra memory for PDF output out of 20736 (max. 10000000)
+
