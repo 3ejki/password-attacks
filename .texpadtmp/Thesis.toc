@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Types of Attacks}{2}
+\contentsline {subsection}{\numberline {2.1}Online Attacks}{2}
+\contentsline {subsection}{\numberline {2.2}Offline Attacks}{3}
+\contentsline {section}{\numberline {3}Entropy}{4}
+\contentsline {section}{\numberline {4}Brute-Force}{6}
+\contentsline {section}{\numberline {5}Patterns}{7}
+\contentsline {subsection}{\numberline {5.1}Topologies}{7}
+\contentsline {subsection}{\numberline {5.2}Keyboard Patterns}{9}
+\contentsline {section}{\numberline {6}Password Lists}{10}
+\contentsline {section}{\numberline {7}Personalisation}{11}
+\contentsline {section}{\numberline {8}Summary}{12}
