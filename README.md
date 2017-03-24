@@ -1,4 +1,4 @@
-# password-attacks
+# Password Attacks
 
 Password attacks are at the edge of accessing someones secrets. By learning to
 judge the strength of a password and by understanding how hackers execute
